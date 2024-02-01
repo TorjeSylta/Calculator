@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 public class CalculatorUnitTests {
 
     @Test
-    public void testEvaluateBasicExpression() {
+    public void testEvaluateBasicExpression() throws Exception {
         Calculator calculator = new Calculator();
         assertEquals("5.0", calculator.evaluateExpression("2+3"));
         assertEquals("6.0", calculator.evaluateExpression("8-2"));
@@ -15,7 +15,7 @@ public class CalculatorUnitTests {
     }
 
     @Test
-    public void testEvaluateBasicExpressionWithDecimals() {
+    public void testEvaluateBasicExpressionWithDecimals() throws Exception {
         Calculator calculator = new Calculator();
         assertEquals("5.0", calculator.evaluateExpression("2.0+3.0"));
         assertEquals("6.0", calculator.evaluateExpression("8.0-2.0"));
@@ -24,7 +24,7 @@ public class CalculatorUnitTests {
     }
 
     @Test
-    public void testEvaluateBasicExpressionWithNegativeResult() {
+    public void testEvaluateBasicExpressionWithNegativeResult() throws Exception {
         Calculator calculator = new Calculator();
         assertEquals("-5.5", calculator.evaluateExpression("-2.5-3.0"));
         assertEquals("-6.0", calculator.evaluateExpression("-8.0+2.0"));
@@ -33,7 +33,7 @@ public class CalculatorUnitTests {
     }
 
     @Test
-    public void testEvaluateLongerExpressions() {
+    public void testEvaluateLongerExpressions() throws Exception {
         Calculator calculator = new Calculator();
         assertEquals("9.0", calculator.evaluateExpression("3+5.0+10-9"));
         assertEquals("3.0", calculator.evaluateExpression("-3+5.0+10-9"));
@@ -43,9 +43,8 @@ public class CalculatorUnitTests {
     }
 
     @Test
-    public void testCalculator() {
+    public void testCalculator() throws Exception {
         Calculator calculator = new Calculator();
-        /**
         assertEquals("6.0", calculator.calculate("3+3"));
         assertEquals("7.0", calculator.calculate("(3+4)"));
         assertEquals("8.0", calculator.calculate("(3+5"));
@@ -53,7 +52,6 @@ public class CalculatorUnitTests {
         assertEquals("0.0", calculator.calculate("()"));
         assertEquals("0.0", calculator.calculate("("));
         assertEquals("10.0", calculator.calculate("(10)"));
-         **/
         assertEquals("254.0", calculator.calculate("(10)+((10*2)-5)*(10+(2*3))+((1+1)+(1+1))"));
         assertEquals("310.0", calculator.calculate("(10)+(((10*2)-5)*((10+(2*3))+(((1+1)+(1+1))"));
     }
