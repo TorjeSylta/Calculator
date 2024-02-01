@@ -159,15 +159,14 @@
 
         <!-- Row 5 -->
         <Button
-            android:id="@+id/buttonClear"
+            android:id="@+id/buttonClearOne"
             android:layout_row="4"
-            android:layout_rowSpan="2"
+            android:layout_rowSpan="1"
             android:layout_column="0"
             android:layout_columnSpan="2"
             android:layout_gravity="fill"
-            android:text="C"
+            android:text="Clear one"
             android:backgroundTint="@color/green"/>
-
 
         <Button
             android:id="@+id/buttonParenthesesLeft"
@@ -180,16 +179,6 @@
             android:backgroundTint="@color/green"/>
 
         <Button
-            android:id="@+id/buttonParenthesesRight"
-            android:layout_row="5"
-            android:layout_rowSpan="1"
-            android:layout_column="2"
-            android:layout_columnSpan="1"
-            android:layout_gravity="fill"
-            android:text=")"
-            android:backgroundTint="@color/green"/>
-
-        <Button
             android:id="@+id/buttonEqual"
             android:layout_row="4"
             android:layout_rowSpan="2"
@@ -197,6 +186,28 @@
             android:layout_columnSpan="1"
             android:layout_gravity="fill"
             android:text="="
+            android:backgroundTint="@color/green"/>
+
+        <!-- Row 6 -->
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_row="5"
+            android:layout_rowSpan="1"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:text="Clear all"
+            android:backgroundTint="@color/green"/>
+
+
+        <Button
+            android:id="@+id/buttonParenthesesRight"
+            android:layout_row="5"
+            android:layout_rowSpan="1"
+            android:layout_column="2"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:text=")"
             android:backgroundTint="@color/green"/>
 
     </GridLayout>
